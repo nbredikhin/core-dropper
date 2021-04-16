@@ -3,7 +3,7 @@ local obstacles = script:GetCustomProperties()
 
 local defaultObstacleDistance = 4000
 local overrideDistance = {
-    -- ObstacleHalfSide = 3000
+    ObstacleMiddlePipe = 2000
 }
 local obstaclesList = {}
 for name, value in pairs(obstacles) do
@@ -46,10 +46,8 @@ local function GenerateTunnel()
     print("Generate tunnel with seed "..tostring(seed))
     local randomStream = RandomStream.New(seed)
 
-    local depth = 500000
     local z = -5000
-
-    while z > -depth do
+    for i = 1, 60 do
         local distance = SpawnRandomObstacle(randomStream, z)
         z = z - distance
     end
