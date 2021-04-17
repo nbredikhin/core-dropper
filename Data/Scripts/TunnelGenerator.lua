@@ -1,7 +1,7 @@
 local gameSettings = World.FindObjectByName("Game Settings")
 local obstacles = script:GetCustomProperties()
 
-local defaultObstacleDistance = 4000
+local defaultObstacleDistance = 3000
 local overrideDistance = {
     ObstacleMiddlePipe = 2000
 }
@@ -15,9 +15,9 @@ end
 
 local objectInstances = {}
 
-local function SpawnRandomObstacle(randomStream, z)
-    if math.random() < 0.2 then
-        return 3000
+local function SpawnRandomObstacle(randomStream, z, index)
+    if index % 8 == 0 then
+        return 4000
     end
 
     local obstacle = obstaclesList[randomStream:GetInteger(1, #obstaclesList)]
@@ -46,11 +46,13 @@ local function GenerateTunnel()
     print("Generate tunnel with seed "..tostring(seed))
     local randomStream = RandomStream.New(seed)
 
+    local index = 1
     local z = -4000
     local minZ = -gameSettings:GetCustomProperty("TunnelDepth") * 5000
     while z > minZ do
-        local distance = SpawnRandomObstacle(randomStream, z)
+        local distance = SpawnRandomObstacle(randomStream, z, index)
         z = z - distance
+        index = index + 1
     end
 end
 

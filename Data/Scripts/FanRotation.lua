@@ -1,1 +1,1 @@
-script.parent:RotateContinuous(Rotation.New(0, 0, 120))
+script.parent:RotateContinuous(Rotation.New(0, 0, 200))

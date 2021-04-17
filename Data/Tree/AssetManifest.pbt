@@ -53,15 +53,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14327900613600066977
-  Name: "Thruster Engine Boost Crackle Loop 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_thruster_engine_crackle_01_Cue_ref"
-  }
-}
-Assets {
   Id: 12022060729321699130
   Name: "Grass Short"
   PlatformAssetType: 1
@@ -113,6 +104,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_urb_graffiti_mural_001"
+  }
+}
+Assets {
+  Id: 10099283024586171826
+  Name: "Carpet 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_carpet_002_uv"
   }
 }
 Assets {
@@ -188,12 +188,30 @@ Assets {
   }
 }
 Assets {
+  Id: 5819199284204898371
+  Name: "Speed Lines Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_ppm_speed_lines"
+  }
+}
+Assets {
   Id: 5645620107124663777
   Name: "Tree Oak 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_oak_001"
+  }
+}
+Assets {
+  Id: 3593915072302238303
+  Name: "\"Retro 8-Bit EDM\" Music Construction Kit (Sections) 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_retro_8bit_edm_sections_kit_ref"
   }
 }
 Assets {
@@ -233,12 +251,39 @@ Assets {
   }
 }
 Assets {
+  Id: 2359878293794356694
+  Name: "Jetpack Thruster Booster Loop 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_jetpack_thruster_booster_loop_01_Cue_ref"
+  }
+}
+Assets {
   Id: 1977206903773675709
   Name: "Impact Player Body Hit 02 SFX"
   PlatformAssetType: 7
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_impact_player_bodyhit_02_Cue_ref"
+  }
+}
+Assets {
+  Id: 1648332927927474605
+  Name: "Container - Rectangle"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_container_rectangle_ref"
+  }
+}
+Assets {
+  Id: 1315144924925880000
+  Name: "Bark Redwood 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bark_redwood_001_uv"
   }
 }
 Assets {
@@ -257,6 +302,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_ship_boat_bell_ring_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 523907760077422222
+  Name: "Cube - Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_hq_test_001"
   }
 }
 Assets {
