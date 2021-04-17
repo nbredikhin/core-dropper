@@ -3066,24 +3066,24 @@ Objects {
     Overrides {
       Name: "bp:Zenith Color"
       Color {
-        G: 0.00634934939
-        B: 0.0500001907
+        R: 0.0157142524
+        B: 0.0900001526
         A: 0.867000043
       }
     }
     Overrides {
       Name: "bp:Horizon Color"
       Color {
-        R: 0.0621587373
-        B: 0.178000212
+        R: 0.119269639
+        B: 0.442000151
         A: 0.895000041
       }
     }
     Overrides {
       Name: "bp:Haze Color"
       Color {
-        G: 0.238000199
-        B: 0.306000113
+        R: 0.578000069
+        G: 0.440381
         A: 1
       }
     }

@@ -8,4 +8,10 @@ local function GenerateTunnel()
     World.FindObjectByName("Game Settings"):SetNetworkedCustomProperty("Seed", seed)
 end
 
-Game.roundStartEvent:Connect(GenerateTunnel)
+local function HandleGameStateChange(_, state)
+    if state == 0 then
+        GenerateTunnel()
+    end
+end
+
+Events.Connect("GameStateChanged", HandleGameStateChange)
