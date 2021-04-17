@@ -30,6 +30,7 @@ Objects {
   ChildIds: 1098591101453812901
   ChildIds: 13746898057174838836
   ChildIds: 1867013162048807769
+  ChildIds: 12366458121379617174
   ChildIds: 10021230478932469399
   ChildIds: 15305849750735276882
   UnregisteredParameters {
@@ -158,6 +159,38 @@ Objects {
     }
     TemplateAsset {
       Id: 8776518948058086192
+    }
+  }
+}
+Objects {
+  Id: 12366458121379617174
+  Name: "Message Banner"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 11168525500713847895
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Message Banner"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17761808554045750448
     }
   }
 }
@@ -3029,6 +3062,18 @@ Objects {
         Id: 1977206903773675709
       }
     }
+    Overrides {
+      Name: "cs:RoundStartSound"
+      AssetReference {
+        Id: 645391924108693172
+      }
+    }
+    Overrides {
+      Name: "cs:WinSound"
+      AssetReference {
+        Id: 6183456632147158220
+      }
+    }
   }
   WantsNetworking: true
   Collidable_v2 {
@@ -3460,11 +3505,11 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "bp:Fog Density"
-      Float: 0.3
+      Float: 3.30046082
     }
     Overrides {
       Name: "bp:Falloff"
-      Float: 0.7
+      Float: 0.603212893
     }
     Overrides {
       Name: "bp:Color"
@@ -3475,6 +3520,10 @@ Objects {
     Overrides {
       Name: "bp:Volumetric Fog"
       Bool: false
+    }
+    Overrides {
+      Name: "bp:Start"
+      Float: 0
     }
   }
   Collidable_v2 {

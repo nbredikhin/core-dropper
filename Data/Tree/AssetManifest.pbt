@@ -170,6 +170,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6183456632147158220
+  Name: "Retro Arcade Victory Fanfare Stingers Set 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_stinger_retro_arcade_victory_fanfare_01_ref"
+  }
+}
+Assets {
   Id: 5645620107124663777
   Name: "Tree Oak 01"
   PlatformAssetType: 1
@@ -221,6 +230,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_impact_player_bodyhit_02_Cue_ref"
+  }
+}
+Assets {
+  Id: 645391924108693172
+  Name: "Ship Boat Bell Ring 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_ship_boat_bell_ring_01_Cue_ref"
   }
 }
 Assets {

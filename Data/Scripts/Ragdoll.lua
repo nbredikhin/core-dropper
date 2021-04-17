@@ -1,28 +1,12 @@
 local tunnelStartTrigger = script.parent
 local tunnelEndTrigger = script:GetCustomProperty("TunnelEndTrigger"):WaitForObject()
 
-local shiftKeyBinding = "ability_feet"
+local speedKeyBinding = "ability_extra_17"
+local slowFallSpeed = 2500
+local fallingWalkSpeed = 2000
 
-local function OnBindingPressed(player, bindingPressed)
-    if bindingPressed == shiftKeyBinding then
-        player:SetVelocity(Vector3.UP * 1000)
-    end
-end
-
-local function OnBindingReleased(player, bindingReleased)
-    if bindingReleased == shiftKeyBinding then
-        player:SetVelocity(Vector3.ZERO)
-    end
-end
-
-local function OnMovementModeChanged(player, mode)
-    if player.maxWalkSpeed == 640 then
-        return
-    end
-
-    if mode == MovementMode.WALKING then
-        player:Die()
-    end
+local function IsPlayerFalling(player)
+    return player.maxWalkSpeed == fallingWalkSpeed
 end
 
 local function TogglePlayerRagdoll(player, state)
@@ -32,44 +16,95 @@ local function TogglePlayerRagdoll(player, state)
         player:EnableRagdoll("left_shoulder", 0.6)
         player:EnableRagdoll("right_hip", 0.6)
         player:EnableRagdoll("left_hip", 0.6)
+    else
+        player:DisableRagdoll()
+    end
+end
+
+local function OnBindingPressed(player, bindingPressed)
+    if not IsPlayerFalling(player) then
+        return
+    end
+
+    if bindingPressed == speedKeyBinding then
+        player.gravityScale = 1.9
+        TogglePlayerRagdoll(player, false)
+    end
+end
+
+local function OnBindingReleased(player, bindingReleased)
+    if not IsPlayerFalling(player) then
+        return
+    end
+
+    if bindingReleased == speedKeyBinding then
+        player.gravityScale = 0
+        local velocity = player:GetVelocity()
+        velocity.z = math.max(velocity.z, -slowFallSpeed)
+        player:SetVelocity(velocity)
+        TogglePlayerRagdoll(player, true)
+    end
+end
+
+local function OnMovementModeChanged(player, mode)
+    if not IsPlayerFalling(player) then
+        return
+    end
+
+    if mode == MovementMode.WALKING then
+        player:Die()
+    end
+end
+
+local function TogglePlayerFalling(player, state)
+    if state then
+        TogglePlayerRagdoll(player, true)
 
         player.maxAcceleration = 10000
-        player.maxWalkSpeed = 2000
+        player.maxWalkSpeed = fallingWalkSpeed
         player.maxJumpCount = 0
         player.isCrouchEnabled = false
         player.canMount = false
         player:SetMounted(false)
+
+        player.gravityScale = 0
+        local velocity = player:GetVelocity()
+        velocity.z = -slowFallSpeed
+        player:SetVelocity(velocity)
     else
         player.maxAcceleration = 1800
         player.maxWalkSpeed = 640
         player.maxJumpCount = 1
         player.canMount = true
-        player:DisableRagdoll()
-    end
-end
-
-local function OnEnterTunnel(theTrigger, player)
-    TogglePlayerRagdoll(player, true)
-end
-
-local function OnRoundEnd()
-    for _, player in ipairs(Game.GetPlayers()) do
+        player.gravityScale = 1.9
         TogglePlayerRagdoll(player, false)
     end
 end
 
+local function OnEnterTunnel(theTrigger, player)
+    TogglePlayerFalling(player, true)
+end
+
+local function OnRoundEnd()
+    for _, player in ipairs(Game.GetPlayers()) do
+        TogglePlayerFalling(player, false)
+    end
+end
+
 local function OnFinishTunnel(theTrigger, player)
-    TogglePlayerRagdoll(player, false)
+    TogglePlayerFalling(player, false)
 
     print("player finished")
 end
 
 local function OnPlayerJoin(player)
     player.respawnedEvent:Connect(function (player)
-        TogglePlayerRagdoll(player, false)
+        TogglePlayerFalling(player, false)
     end)
 
     player.movementModeChangedEvent:Connect(OnMovementModeChanged)
+    player.bindingPressedEvent:Connect(OnBindingPressed)
+    player.bindingReleasedEvent:Connect(OnBindingReleased)
 end
 
 tunnelStartTrigger.beginOverlapEvent:Connect(OnEnterTunnel)
