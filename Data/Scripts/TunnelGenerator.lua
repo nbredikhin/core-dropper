@@ -52,8 +52,6 @@ local function GenerateTunnel()
         local distance = SpawnRandomObstacle(randomStream, z)
         z = z - distance
     end
-
-    -- Spawn ground
 end
 
 gameSettings.networkedPropertyChangedEvent:Connect(function (_, propertyName)

@@ -215,6 +215,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1977206903773675709
+  Name: "Impact Player Body Hit 02 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_impact_player_bodyhit_02_Cue_ref"
+  }
+}
+Assets {
   Id: 472496642976630875
   Name: "Urban Fence Panel"
   PlatformAssetType: 1

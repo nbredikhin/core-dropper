@@ -30,6 +30,7 @@ Objects {
   ChildIds: 1098591101453812901
   ChildIds: 13746898057174838836
   ChildIds: 1867013162048807769
+  ChildIds: 10021230478932469399
   ChildIds: 15305849750735276882
   UnregisteredParameters {
   }
@@ -61,7 +62,7 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 13216010210600407489
+  ChildIds: 5938856526107399411
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -83,20 +84,29 @@ Objects {
   }
 }
 Objects {
-  Id: 13216010210600407489
-  Name: "Finish"
+  Id: 5938856526107399411
+  Name: "FinishServer"
   Transform {
     Location {
+      Z: 458.715637
     }
     Rotation {
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.0458715558
+      Y: 0.0458715558
+      Z: 0.0917431265
     }
   }
   ParentId: 15305849750735276882
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API"
+      AssetReference {
+        Id: 11974742996071064388
+      }
+    }
+  }
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -109,7 +119,45 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 4515720605586095557
+      Id: 8316787429166370949
+    }
+  }
+  InstanceHistory {
+    SelfId: 5938856526107399411
+    SubobjectId: 9244366846504141008
+    InstanceId: 9359416963432028192
+    TemplateId: 3103236718776660123
+  }
+}
+Objects {
+  Id: 10021230478932469399
+  Name: "Victory Announcer"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 18154550910277010479
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Victory Announcer"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8776518948058086192
     }
   }
 }
@@ -301,6 +349,10 @@ Objects {
         Overrides {
           Name: "Name"
           String: "Lobby Start Respawn Players"
+        }
+        Overrides {
+          Name: "cs:Period"
+          Float: 3
         }
       }
     }
@@ -2853,6 +2905,7 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 13114287954153994394
   ChildIds: 16585284641234091717
   ChildIds: 8422412126231343224
   Collidable_v2 {
@@ -2951,6 +3004,45 @@ Objects {
   Script {
     ScriptAsset {
       Id: 331112677380424214
+    }
+  }
+}
+Objects {
+  Id: 13114287954153994394
+  Name: "Sounds"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13811767146036997443
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:DeathSound"
+      AssetReference {
+        Id: 1977206903773675709
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1262827942840667419
     }
   }
 }
