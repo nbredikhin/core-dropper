@@ -46,11 +46,14 @@ local function GenerateTunnel()
     print("Generate tunnel with seed "..tostring(seed))
     local randomStream = RandomStream.New(seed)
 
-    local z = -5000
-    for i = 1, 60 do
+    local z = -4000
+    local minZ = -gameSettings:GetCustomProperty("TunnelDepth") * 5000
+    while z > minZ do
         local distance = SpawnRandomObstacle(randomStream, z)
         z = z - distance
     end
+
+    -- Spawn ground
 end
 
 gameSettings.networkedPropertyChangedEvent:Connect(function (_, propertyName)

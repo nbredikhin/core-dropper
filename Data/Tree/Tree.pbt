@@ -30,6 +30,7 @@ Objects {
   ChildIds: 1098591101453812901
   ChildIds: 13746898057174838836
   ChildIds: 1867013162048807769
+  ChildIds: 15305849750735276882
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -42,6 +43,74 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 15305849750735276882
+  Name: "TunnelEndTrigger"
+  Transform {
+    Location {
+      Z: -5000
+    }
+    Rotation {
+    }
+    Scale {
+      X: 21.8000011
+      Y: 21.8000011
+      Z: 10.8999987
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 13216010210600407489
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 13216010210600407489
+  Name: "Finish"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15305849750735276882
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4515720605586095557
+    }
   }
 }
 Objects {
@@ -323,7 +392,7 @@ Objects {
         }
         Overrides {
           Name: "cs:RoundDuration"
-          Float: 30
+          Float: 60
         }
       }
     }
@@ -412,6 +481,12 @@ Objects {
   }
   ParentId: 9663167647042716464
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:TunnelEnd"
+      AssetReference {
+        Id: 12427705397163090417
+      }
+    }
     Overrides {
       Name: "cs:SideWalls"
       AssetReference {
@@ -599,6 +674,14 @@ Objects {
     }
   }
   ParentId: 17644746569795952250
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:TunnelEndTrigger"
+      ObjectReference {
+        SelfId: 15305849750735276882
+      }
+    }
+  }
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3588,7 +3671,15 @@ Objects {
       Int: 0
     }
     Overrides {
+      Name: "cs:TunnelDepth"
+      Int: 25
+    }
+    Overrides {
       Name: "cs:Seed:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:TunnelDepth:isrep"
       Bool: true
     }
   }
