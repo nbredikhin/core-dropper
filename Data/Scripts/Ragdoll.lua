@@ -6,7 +6,7 @@ local slowFallSpeed = 2500
 local fallingWalkSpeed = 2000
 
 local function IsPlayerFalling(player)
-    return player.maxWalkSpeed == fallingWalkSpeed
+    return player.maxWalkSpeed == fallingWalkSpeed and not player.isDead
 end
 
 local function TogglePlayerRagdoll(player, state)

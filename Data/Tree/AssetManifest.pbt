@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14327900613600066977
+  Name: "Thruster Engine Boost Crackle Loop 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_thruster_engine_crackle_01_Cue_ref"
+  }
+}
+Assets {
   Id: 12022060729321699130
   Name: "Grass Short"
   PlatformAssetType: 1
@@ -230,6 +239,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_impact_player_bodyhit_02_Cue_ref"
+  }
+}
+Assets {
+  Id: 825144262358898016
+  Name: "Air Conditioned Room Tone Loop 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_air_condition_room_tone_loop_01_Cue_ref"
   }
 }
 Assets {

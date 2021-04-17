@@ -2997,6 +2997,8 @@ Objects {
     }
   }
   ParentId: 13811767146036997443
+  ChildIds: 16077997163525681666
+  ChildIds: 2610586143936720960
   ChildIds: 1745059896408496261
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -3025,6 +3027,20 @@ Objects {
     }
   }
   ParentId: 16585284641234091717
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:FallSound"
+      ObjectReference {
+        SelfId: 2610586143936720960
+      }
+    }
+    Overrides {
+      Name: "cs:SpeedUpSound"
+      ObjectReference {
+        SelfId: 16077997163525681666
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3038,6 +3054,74 @@ Objects {
     ScriptAsset {
       Id: 331112677380424214
     }
+  }
+}
+Objects {
+  Id: 2610586143936720960
+  Name: "FallSound"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16585284641234091717
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 825144262358898016
+    }
+    Repeat: true
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+  }
+}
+Objects {
+  Id: 16077997163525681666
+  Name: "SpeedUpSound"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16585284641234091717
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 14327900613600066977
+    }
+    Repeat: true
+    Volume: 1
+    Falloff: -1
+    Radius: -1
   }
 }
 Objects {
