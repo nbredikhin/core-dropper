@@ -34,6 +34,7 @@ Objects {
   ChildIds: 10021230478932469399
   ChildIds: 15305849750735276882
   ChildIds: 1514689420106952542
+  ChildIds: 17195208318070793789
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -46,6 +47,59 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 17195208318070793789
+  Name: "Playerboard (Core)"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6089548129445110935
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Playerboard (Core)"
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7790087174273121791
+      value {
+        Overrides {
+          Name: "UIX"
+          Float: 20
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 20
+        }
+        Overrides {
+          Name: "Width"
+          Int: 270
+        }
+        Overrides {
+          Name: "Height"
+          Int: 520
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1058974783913037347
+    }
   }
 }
 Objects {
