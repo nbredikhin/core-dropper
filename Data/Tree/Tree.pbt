@@ -1032,7 +1032,7 @@ Objects {
         }
         Overrides {
           Name: "cs:RoundDuration"
-          Float: 120
+          Float: 150
         }
       }
     }

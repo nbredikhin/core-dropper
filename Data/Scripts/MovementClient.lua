@@ -43,6 +43,12 @@ function Tick(deltaTime)
     player:GetDefaultCamera().fieldOfView = fov
 end
 
-Game.GetLocalPlayer().diedEvent:Connect(function ()
-    deathSound:Play()
+Game.GetLocalPlayer().movementModeChangedEvent:Connect(function (player, mode)
+    if not isFalling then
+        return
+    end
+
+    if mode == MovementMode.WALKING then
+        deathSound:Play()
+    end
 end)
