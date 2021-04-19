@@ -29,12 +29,12 @@ Objects {
   ChildIds: 8639565001238803392
   ChildIds: 1098591101453812901
   ChildIds: 13746898057174838836
-  ChildIds: 1867013162048807769
   ChildIds: 12366458121379617174
   ChildIds: 10021230478932469399
   ChildIds: 15305849750735276882
   ChildIds: 1514689420106952542
   ChildIds: 17195208318070793789
+  ChildIds: 11181209971128189222
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -47,6 +47,46 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 11181209971128189222
+  Name: "TV and speakers"
+  Transform {
+    Location {
+      X: 1880
+      Y: 1010
+      Z: 49.9998169
+    }
+    Rotation {
+      Yaw: 120
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "TV and speakers"
+  }
+  InstanceHistory {
+    SelfId: 11181209971128189222
+    SubobjectId: 11412547198239496320
+    InstanceId: 10184637283165675535
+    TemplateId: 5088061581504819136
+    WasRoot: true
   }
 }
 Objects {
@@ -123,6 +163,8 @@ Objects {
   ParentId: 4781671109827199097
   ChildIds: 13728486323474537852
   ChildIds: 7208479259124257642
+  ChildIds: 18444073952028661102
+  ChildIds: 13620893265960701965
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -142,6 +184,161 @@ Objects {
     InstanceId: 14792958007275602126
     TemplateId: 7169226187848956708
     WasRoot: true
+  }
+}
+Objects {
+  Id: 13620893265960701965
+  Name: "Desk Lamp Light"
+  Transform {
+    Location {
+      X: -247.327545
+      Y: -306.383881
+      Z: 340.000031
+    }
+    Rotation {
+      Yaw: 180
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1514689420106952542
+  ChildIds: 6253940644441573086
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10961092539031217196
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 6253940644441573086
+  Name: "Spotlight"
+  Transform {
+    Location {
+      X: -8.17449951
+      Y: 127.801285
+      Z: 10
+    }
+    Rotation {
+      Pitch: -69.4092712
+      Yaw: -92.4628906
+      Roll: -76.5335388
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13620893265960701965
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 11.4207354
+    Color {
+      R: 1
+      G: 0.670666635
+      B: 0.202000022
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 917.266724
+        SpotLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+          InnerConeAngle: 30
+          OuterConeAngle: 75.2005081
+          Profile {
+            Value: "mc:espotlightprofile:basicspotlight"
+          }
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 18444073952028661102
+  Name: "World Text"
+  Transform {
+    Location {
+      X: -270.781921
+      Y: -309.008026
+      Z: 290.000031
+    }
+    Rotation {
+      Yaw: -89.9999695
+    }
+    Scale {
+      X: 2.2
+      Y: 2.6
+      Z: 2.6
+    }
+  }
+  ParentId: 1514689420106952542
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Text {
+    Text: "URBAN DROPPER"
+    FontAsset {
+    }
+    Color {
+      R: 1
+      G: 1
+      B: 1
+      A: 1
+    }
+    HorizontalSize: 1
+    VerticalSize: 1
+    HorizontalAlignment {
+      Value: "mc:ecoretexthorizontalalign:center"
+    }
+    VerticalAlignment {
+      Value: "mc:ecoretextverticalalign:center"
+    }
   }
 }
 Objects {
@@ -186,13 +383,14 @@ Objects {
   Name: "Container - Rectangle"
   Transform {
     Location {
-      X: -270.000061
-      Y: -307.165527
+      X: -268.993469
+      Y: -305.422058
       Z: 225
     }
     Rotation {
       Pitch: 90
-      Roll: 89.9999847
+      Yaw: 180
+      Roll: -90.0000305
     }
     Scale {
       X: 2.5
@@ -408,7 +606,7 @@ Objects {
     Location {
       X: -270.781921
       Y: -309.008026
-      Z: 212.000031
+      Z: 190.000031
     }
     Rotation {
       Yaw: -90
@@ -416,7 +614,7 @@ Objects {
     Scale {
       X: 2.5
       Y: 2.9
-      Z: 4.89999962
+      Z: 3.5
     }
   }
   ParentId: 1514689420106952542
@@ -593,51 +791,6 @@ Objects {
     }
     TemplateAsset {
       Id: 17761808554045750448
-    }
-  }
-}
-Objects {
-  Id: 1867013162048807769
-  Name: "SideWalls"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 13566071106126117784
-      value {
-        Overrides {
-          Name: "Name"
-          String: "SideWalls"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 0.999999762
-            Z: 1.63158059
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1525291257524540572
     }
   }
 }
@@ -1102,6 +1255,18 @@ Objects {
       Name: "cs:ObstacleCornerHole"
       AssetReference {
         Id: 2530995874219322800
+      }
+    }
+    Overrides {
+      Name: "cs:ObstacleFrame"
+      AssetReference {
+        Id: 6608768475248092304
+      }
+    }
+    Overrides {
+      Name: "cs:ObstacleTwoPipes"
+      AssetReference {
+        Id: 154028049080684305
       }
     }
   }
@@ -3355,6 +3520,7 @@ Objects {
   ChildIds: 13114287954153994394
   ChildIds: 16585284641234091717
   ChildIds: 8422412126231343224
+  ChildIds: 3593799732378787674
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3366,6 +3532,51 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 3593799732378787674
+  Name: "Effects"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13811767146036997443
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:DeathVFX"
+      AssetReference {
+        Id: 17565178825785914004
+      }
+    }
+    Overrides {
+      Name: "cs:DeathDecal"
+      AssetReference {
+        Id: 15912137699763441299
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14206182325114634185
+    }
   }
 }
 Objects {
@@ -3413,8 +3624,9 @@ Objects {
   ParentId: 13811767146036997443
   ChildIds: 16077997163525681666
   ChildIds: 2610586143936720960
+  ChildIds: 11279484908335481366
   ChildIds: 1745059896408496261
-  ChildIds: 5207214176347944982
+  ChildIds: 10145892430492204497
   ChildIds: 16070829289496206025
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -3510,10 +3722,13 @@ Objects {
   }
 }
 Objects {
-  Id: 5207214176347944982
-  Name: "\"Retro 8-Bit EDM\" Music Construction Kit (Sections) 01"
+  Id: 10145892430492204497
+  Name: "Lobby Music"
   Transform {
     Location {
+      X: 1630
+      Y: 1380
+      Z: 150
     }
     Rotation {
     }
@@ -3535,7 +3750,7 @@ Objects {
   }
   Blueprint {
     BlueprintAsset {
-      Id: 3593915072302238303
+      Id: 3824778438872546620
     }
     TeamSettings {
     }
@@ -3543,7 +3758,10 @@ Objects {
       AutoPlay: true
       Volume: 1
       Falloff: 3600
-      Radius: 400
+      Radius: 800
+      EnableOcclusion: true
+      IsSpatializationEnabled: true
+      IsAttenuationEnabled: true
     }
   }
 }
@@ -3581,6 +3799,12 @@ Objects {
         SelfId: 16070829289496206025
       }
     }
+    Overrides {
+      Name: "cs:DeathSound"
+      ObjectReference {
+        SelfId: 11279484908335481366
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3595,6 +3819,39 @@ Objects {
     ScriptAsset {
       Id: 331112677380424214
     }
+  }
+}
+Objects {
+  Id: 11279484908335481366
+  Name: "DeathSound"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16585284641234091717
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 13116033412810413522
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
   }
 }
 Objects {
@@ -3684,7 +3941,7 @@ Objects {
     Overrides {
       Name: "cs:DeathSound"
       AssetReference {
-        Id: 1977206903773675709
+        Id: 13116033412810413522
       }
     }
     Overrides {
@@ -4379,7 +4636,6 @@ Objects {
       FlipOnMultiJump: true
       CanMoveUp: true
       CanMoveDown: true
-      IsMountEnabled: true
       MaxHitpoints: 100
     }
   }
@@ -4438,7 +4694,7 @@ Objects {
     }
     Overrides {
       Name: "cs:TunnelDepth"
-      Int: 25
+      Int: 20
     }
     Overrides {
       Name: "cs:Seed:isrep"

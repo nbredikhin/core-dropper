@@ -19,7 +19,6 @@ Assets {
         ChildIds: 10425656728162458878
         ChildIds: 9800431860332186657
         ChildIds: 15898132643336163222
-        ChildIds: 13039874479502367389
         ChildIds: 12909688249160170588
         WantsNetworking: true
         Collidable_v2 {
@@ -61,7 +60,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.906
+              R: 0.778000116
               A: 1
             }
           }
@@ -120,7 +119,8 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.514000058
+              R: 0.234000087
+              G: 1.11579936e-07
               A: 1
             }
           }
@@ -179,7 +179,8 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.514000058
+              R: 0.234000087
+              G: 1.11579936e-07
               A: 1
             }
           }
@@ -208,50 +209,6 @@ Assets {
               LinearDamping: 0.01
             }
           }
-        }
-      }
-      Objects {
-        Id: 13039874479502367389
-        Name: "Decal Stains Bottom 01"
-        Transform {
-          Location {
-            X: -237.112946
-            Y: -80
-            Z: 93.6880569
-          }
-          Rotation {
-            Pitch: 5.67624903
-            Yaw: 0.886450052
-            Roll: -37.4174652
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 15575292015368050743
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 2683908510812605389
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
         }
       }
       Objects {
@@ -315,15 +272,6 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_cardboard_001_uv_ref"
-      }
-    }
-    Assets {
-      Id: 2683908510812605389
-      Name: "Decal Stains Bottom 01"
-      PlatformAssetType: 14
-      PrimaryAsset {
-        AssetType: "DecalBlueprintAssetRef"
-        AssetId: "bp_decal_stain_bottom_001"
       }
     }
     Assets {

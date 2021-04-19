@@ -12,7 +12,6 @@ local function OnBeginOverlap(theTrigger, player)
         return
     end
     isWinnerSelected = true
-    print("Player won "..tostring(player.name))
     Events.Broadcast("PlayerVictory", player)
     ABGS.SetGameState(ABGS.GAME_STATE_ROUND_END)
 end
@@ -21,5 +20,14 @@ local function OnRoundStart()
     isWinnerSelected = false
 end
 
+local function HandleGameStateChange(_, state)
+    if state == 2 then
+        if not isWinnerSelected then
+            Events.BroadcastToAllPlayers("BannerMessage", "No winner.")
+        end
+    end
+end
+
 tunnelEndTrigger.beginOverlapEvent:Connect(OnBeginOverlap)
 Game.roundStartEvent:Connect(OnRoundStart)
+Events.Connect("GameStateChanged", HandleGameStateChange)

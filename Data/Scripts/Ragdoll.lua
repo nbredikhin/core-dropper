@@ -9,18 +9,6 @@ local function IsPlayerFalling(player)
     return player.maxWalkSpeed == fallingWalkSpeed and not player.isDead
 end
 
-local function TogglePlayerRagdoll(player, state)
-    if state then
-        player:EnableRagdoll("lower_spine", 0.4)
-        player:EnableRagdoll("right_shoulder", 0.2)
-        player:EnableRagdoll("left_shoulder", 0.6)
-        player:EnableRagdoll("right_hip", 0.6)
-        player:EnableRagdoll("left_hip", 0.6)
-    else
-        player:DisableRagdoll()
-    end
-end
-
 local function OnBindingPressed(player, bindingPressed)
     if not IsPlayerFalling(player) then
         return
@@ -28,7 +16,6 @@ local function OnBindingPressed(player, bindingPressed)
 
     if bindingPressed == speedKeyBinding then
         player.gravityScale = 1.9
-        TogglePlayerRagdoll(player, false)
     end
 end
 
@@ -42,7 +29,6 @@ local function OnBindingReleased(player, bindingReleased)
         local velocity = player:GetVelocity()
         velocity.z = math.max(velocity.z, -slowFallSpeed)
         player:SetVelocity(velocity)
-        TogglePlayerRagdoll(player, true)
     end
 end
 
@@ -58,14 +44,10 @@ end
 
 local function TogglePlayerFalling(player, state)
     if state then
-        TogglePlayerRagdoll(player, true)
-
         player.maxAcceleration = 10000
         player.maxWalkSpeed = fallingWalkSpeed
         player.maxJumpCount = 0
         player.isCrouchEnabled = false
-        player.canMount = false
-        player:SetMounted(false)
 
         player.gravityScale = 0
         local velocity = player:GetVelocity()
@@ -75,9 +57,7 @@ local function TogglePlayerFalling(player, state)
         player.maxAcceleration = 1800
         player.maxWalkSpeed = 640
         player.maxJumpCount = 1
-        player.canMount = true
         player.gravityScale = 1.9
-        TogglePlayerRagdoll(player, false)
     end
 end
 

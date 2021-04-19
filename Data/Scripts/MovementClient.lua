@@ -1,4 +1,5 @@
 local fallSound = script:GetCustomProperty("FallSound"):WaitForObject()
+local deathSound = script:GetCustomProperty("DeathSound"):WaitForObject()
 local speedUpSound = script:GetCustomProperty("SpeedUpSound"):WaitForObject()
 local speedLines = script:GetCustomProperty("SpeedLines"):WaitForObject()
 
@@ -41,3 +42,7 @@ function Tick(deltaTime)
     fov = fov + (targetFov - fov) * deltaTime * 2
     player:GetDefaultCamera().fieldOfView = fov
 end
+
+Game.GetLocalPlayer().diedEvent:Connect(function ()
+    deathSound:Play()
+end)

@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17565178825785914004
+  Name: "Gibs Explosion VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_bloody_explosion"
+  }
+}
+Assets {
   Id: 17559378999275841815
   Name: "Urban Manhole Cover 01"
   PlatformAssetType: 1
@@ -50,6 +59,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_urb_graffiti_scribbles_001"
+  }
+}
+Assets {
+  Id: 13116033412810413522
+  Name: "Cracking Break Impact Hit 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_cracking_break_impact_hit_01_Cue_ref"
   }
 }
 Assets {
@@ -95,6 +113,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_stone_floor_rough_002"
+  }
+}
+Assets {
+  Id: 10961092539031217196
+  Name: "Desk Lamp Light"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_lamp_desktop_light_001"
   }
 }
 Assets {
@@ -206,12 +233,12 @@ Assets {
   }
 }
 Assets {
-  Id: 3593915072302238303
-  Name: "\"Retro 8-Bit EDM\" Music Construction Kit (Sections) 01"
+  Id: 3824778438872546620
+  Name: "Retro and Arcade Music Score Set 01"
   PlatformAssetType: 10
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
-    AssetId: "abp_retro_8bit_edm_sections_kit_ref"
+    AssetId: "abp_RetroArcadeMusic_ref"
   }
 }
 Assets {
@@ -257,15 +284,6 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_jetpack_thruster_booster_loop_01_Cue_ref"
-  }
-}
-Assets {
-  Id: 1977206903773675709
-  Name: "Impact Player Body Hit 02 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_impact_player_bodyhit_02_Cue_ref"
   }
 }
 Assets {

@@ -1,10 +1,12 @@
 local gameSettings = World.FindObjectByName("Game Settings")
 local obstacles = script:GetCustomProperties()
 
-local defaultObstacleDistance = 3000
+local defaultObstacleDistance = 2500
 local overrideDistance = {
-    ObstacleMiddlePipe = 2000
+    ObstacleMiddlePipe = 1500,
+    ObstacleCornerHole = 1500,
 }
+
 local obstaclesList = {}
 for name, value in pairs(obstacles) do
     table.insert(obstaclesList, {
