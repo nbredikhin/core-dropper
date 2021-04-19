@@ -17,6 +17,7 @@ local function OnBeginOverlap(theTrigger, player)
 end
 
 local function OnRoundStart()
+    Events.BroadcastToAllPlayers("BannerMessage", "Go!")
     isWinnerSelected = false
 end
 
