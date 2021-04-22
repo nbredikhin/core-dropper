@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16462694806188520793
+  Name: "Craftsman Wall 01 Garage Single"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_wall_001_garage_single_ref"
+  }
+}
+Assets {
   Id: 15158616643363270135
   Name: "Pipe - 4-Sided Thick"
   PlatformAssetType: 1
@@ -62,12 +71,30 @@ Assets {
   }
 }
 Assets {
+  Id: 13899058249000318401
+  Name: "Craftsman Wall 01 Half "
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_wall_001_half"
+  }
+}
+Assets {
   Id: 13116033412810413522
   Name: "Cracking Break Impact Hit 01 SFX"
   PlatformAssetType: 7
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_cracking_break_impact_hit_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 12868138083867151982
+  Name: "Street Light Pole Clamp 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_st_post_lights_post_clamp_001"
   }
 }
 Assets {
@@ -134,12 +161,30 @@ Assets {
   }
 }
 Assets {
+  Id: 10123498949289312814
+  Name: "Craftsman Roof 01 Peak"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_roof_001_peak"
+  }
+}
+Assets {
   Id: 10099283024586171826
   Name: "Carpet 02"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_carpet_002_uv"
+  }
+}
+Assets {
+  Id: 9805577497882279832
+  Name: "Trash Can"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_trash_can_base_001"
   }
 }
 Assets {
@@ -176,6 +221,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_grass_generic_001"
+  }
+}
+Assets {
+  Id: 7131970830679182793
+  Name: "Craftsman Garage Door 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_door_garage_001"
+  }
+}
+Assets {
+  Id: 7052271310929477723
+  Name: "Sphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_002"
   }
 }
 Assets {
@@ -242,6 +305,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3702191406046426907
+  Name: "Emissive Glow Transparent"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_emissive_001"
+  }
+}
+Assets {
   Id: 3520366330309552976
   Name: "Main Street Window Frame 03"
   PlatformAssetType: 1
@@ -257,6 +329,28 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_wall_002_ref"
+  }
+}
+Assets {
+  Id: 3193154458363705175
+  Name: "UrbanDropperStats"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "cb78f7827826402a954557cd2d722293"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
+  Id: 3033392269738934740
+  Name: "Craftsman Wall 03 Triangle Top"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_wall_003_triTop"
   }
 }
 Assets {
