@@ -17,6 +17,10 @@ Events.Connect("PlayerVictory", function (player)
     AddStoredResource(player, "Wins", 1)
 end)
 
+Events.Connect("PlayerCollectCoin", function (player)
+    AddStoredResource(player, "Coins", 1)
+end)
+
 local function HandlePlayerDeath(player)
     AddStoredResource(player, "Deaths", 1)
 end

@@ -1,12 +1,12 @@
 Assets {
-  Id: 9897174933897892887
-  Name: "Manticoin"
+  Id: 17511973374225701053
+  Name: "Coin Collectable"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 818904220942014411
+      RootId: 11311112870787598977
       Objects {
-        Id: 818904220942014411
+        Id: 11311112870787598977
         Name: "TemplateBundleDummy"
         Transform {
           Location {
@@ -18,8 +18,6 @@ Assets {
             Y: 1
             Z: 1
           }
-        }
-        UnregisteredParameters {
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
@@ -33,7 +31,10 @@ Assets {
         Folder {
           BundleDummy {
             ReferencedAssets {
-              Id: 13308600677408902328
+              Id: 5142691178379973586
+            }
+            ReferencedAssets {
+              Id: 3622442096071839634
             }
           }
         }
@@ -45,11 +46,11 @@ Assets {
     }
   }
   Marketplace {
-    Id: "3419f604af714e4e8d86a63fcf22f18e"
-    OwnerAccountId: "8aa6e0c558be4a1c98e80229b73ffeb9"
-    OwnerName: "Dracowolfie"
-    Version: "1.3.0"
-    Description: "This is a model only! \r\n\r\nThis was mainly for use in old and now-replaced Advanced Scripting in Core tutorial, but feel free to use this however you like.\r\n\r\n------\r\n\r\n...A manti-coin for becoming manti-rich.\r\n\r\n-----\r\n\r\nUpdate: Rewriting description to reflect current use."
+    Id: "514f1a1f6b4946f58807a9f2ae0aaf32"
+    OwnerAccountId: "f1748ac1266b4b4a81cfb4c3ba30b497"
+    OwnerName: "MrDrRobotoMan"
+    Version: "1.0.0"
+    Description: "A collectable manticoin with UI. UI was made with RagingFang UI in community content and coin and script was made from the Advanced scripting tutorial in the core docs. Drag and drop both into your hiarchy and use as is or modify as you like. "
   }
   SerializationVersion: 81
 }

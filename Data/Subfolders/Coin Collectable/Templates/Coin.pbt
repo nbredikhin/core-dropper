@@ -1,24 +1,23 @@
 Assets {
-  Id: 13308600677408902328
-  Name: "Manticoin"
+  Id: 5142691178379973586
+  Name: "Coin"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 1588452520975623955
+      RootId: 2739885972979216368
       Objects {
-        Id: 1588452520975623955
-        Name: "Manticoin"
+        Id: 2739885972979216368
+        Name: "Coin"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 3640790647783174199
-        UnregisteredParameters {
-        }
+        ChildIds: 14559608110988476665
+        ChildIds: 2962424339968888781
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29,26 +28,65 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
-        Folder {
-          IsGroup: true
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
         }
       }
       Objects {
-        Id: 3640790647783174199
-        Name: "ClientContext"
+        Id: 14559608110988476665
+        Name: "PickUpCoin"
         Transform {
           Location {
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 3.33333325
+            Y: 3.33333325
+            Z: 3.33333325
           }
         }
-        ParentId: 1588452520975623955
-        ChildIds: 219712545069638251
+        ParentId: 2739885972979216368
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 13018273319857028535
+          }
+        }
+      }
+      Objects {
+        Id: 2962424339968888781
+        Name: "ClientContext"
+        Transform {
+          Location {
+            Y: 0.822931886
+            Z: 0.830968201
+          }
+          Rotation {
+          }
+          Scale {
+            X: 3.33333325
+            Y: 3.33333325
+            Z: 3.33333325
+          }
+        }
+        ParentId: 2739885972979216368
+        ChildIds: 8718894194199335667
         UnregisteredParameters {
         }
         WantsNetworking: true
@@ -65,24 +103,23 @@ Assets {
         }
       }
       Objects {
-        Id: 219712545069638251
-        Name: "Art"
+        Id: 8718894194199335667
+        Name: "Manticoin"
         Transform {
           Location {
+            Z: -1.18000793
           }
           Rotation {
           }
           Scale {
-            X: 0.672396362
-            Y: 0.672396362
-            Z: 0.672396362
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
-        ParentId: 3640790647783174199
-        ChildIds: 9989392653286645156
-        ChildIds: 9110270492376205669
-        ChildIds: 9565189305723959447
-        ChildIds: 2030308354252964142
+        ParentId: 2962424339968888781
+        ChildIds: 1781607776424933927
+        ChildIds: 12542052093270955576
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -99,7 +136,71 @@ Assets {
         }
       }
       Objects {
-        Id: 9989392653286645156
+        Id: 1781607776424933927
+        Name: "ClientContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8718894194199335667
+        ChildIds: 8908186995039914995
+        UnregisteredParameters {
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 8908186995039914995
+        Name: "Art"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.672396362
+            Y: 0.672396362
+            Z: 0.672396362
+          }
+        }
+        ParentId: 1781607776424933927
+        ChildIds: 7624219398082693182
+        ChildIds: 7277499288203869262
+        ChildIds: 7226201694578071330
+        ChildIds: 5797343582812168646
+        UnregisteredParameters {
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 7624219398082693182
         Name: "Cylinder - Polished"
         Transform {
           Location {
@@ -116,7 +217,7 @@ Assets {
             Z: 0.0487109534
           }
         }
-        ParentId: 219712545069638251
+        ParentId: 8908186995039914995
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -163,7 +264,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9110270492376205669
+        Id: 7277499288203869262
         Name: "Ring"
         Transform {
           Location {
@@ -180,7 +281,7 @@ Assets {
             Z: 0.639775634
           }
         }
-        ParentId: 219712545069638251
+        ParentId: 8908186995039914995
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -227,7 +328,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9565189305723959447
+        Id: 7226201694578071330
         Name: "Logo"
         Transform {
           Location {
@@ -243,7 +344,7 @@ Assets {
             Z: 0.244653046
           }
         }
-        ParentId: 219712545069638251
+        ParentId: 8908186995039914995
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -290,7 +391,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2030308354252964142
+        Id: 5797343582812168646
         Name: "Logo"
         Transform {
           Location {
@@ -307,7 +408,7 @@ Assets {
             Z: 0.244653046
           }
         }
-        ParentId: 219712545069638251
+        ParentId: 8908186995039914995
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -350,6 +451,37 @@ Assets {
           StaticMesh {
             Physics {
             }
+          }
+        }
+      }
+      Objects {
+        Id: 12542052093270955576
+        Name: "SpinCoin"
+        Transform {
+          Location {
+            Z: 7.62939453e-06
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8718894194199335667
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 18075509322903521923
           }
         }
       }
@@ -396,7 +528,7 @@ Assets {
     }
   }
   Marketplace {
-    Description: "This is a model only! \r\n\r\nThis was mainly for use in old and now-replaced Advanced Scripting in Core tutorial, but feel free to use this however you like.\r\n\r\n------\r\n\r\n...A manti-coin for becoming manti-rich.\r\n\r\n-----\r\n\r\nUpdate: Rewriting description to reflect current use."
+    Description: "A collectable manticoin with UI. UI was made with RagingFang UI in community content and coin and script was made from the Advanced scripting tutorial in the core docs. Drag and drop both into your hiarchy and use as is or modify as you like. "
   }
   SerializationVersion: 81
   DirectlyPublished: true
