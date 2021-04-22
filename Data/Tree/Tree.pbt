@@ -3520,7 +3520,6 @@ Objects {
   ChildIds: 13114287954153994394
   ChildIds: 16585284641234091717
   ChildIds: 8422412126231343224
-  ChildIds: 3593799732378787674
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3532,51 +3531,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-}
-Objects {
-  Id: 3593799732378787674
-  Name: "Effects"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13811767146036997443
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:DeathVFX"
-      AssetReference {
-        Id: 17565178825785914004
-      }
-    }
-    Overrides {
-      Name: "cs:DeathDecal"
-      AssetReference {
-        Id: 15912137699763441299
-      }
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14206182325114634185
-    }
   }
 }
 Objects {
@@ -3653,6 +3607,7 @@ Objects {
     }
   }
   ParentId: 13811767146036997443
+  ChildIds: 3593799732378787674
   ChildIds: 16077997163525681666
   ChildIds: 2610586143936720960
   ChildIds: 11279484908335481366
@@ -3951,6 +3906,50 @@ Objects {
     Volume: 1
     Falloff: -1
     Radius: -1
+  }
+}
+Objects {
+  Id: 3593799732378787674
+  Name: "Effects"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16585284641234091717
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:DeathVFX"
+      AssetReference {
+        Id: 17565178825785914004
+      }
+    }
+    Overrides {
+      Name: "cs:DeathDecal"
+      AssetReference {
+        Id: 15912137699763441299
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14206182325114634185
+    }
   }
 }
 Objects {

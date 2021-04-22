@@ -50,5 +50,6 @@ Game.GetLocalPlayer().movementModeChangedEvent:Connect(function (player, mode)
 
     if mode == MovementMode.WALKING then
         deathSound:Play()
+        Events.Broadcast("localPlayerDead")
     end
 end)
