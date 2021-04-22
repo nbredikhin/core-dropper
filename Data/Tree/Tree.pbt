@@ -2236,12 +2236,12 @@ Objects {
   Name: "Cafe Chair"
   Transform {
     Location {
-      X: 1377
-      Y: 2624
-      Z: 50
+      X: 278
+      Y: 2620
+      Z: 50.0000153
     }
     Rotation {
-      Yaw: -39.9999695
+      Yaw: -165
     }
     Scale {
       X: 1

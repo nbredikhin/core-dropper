@@ -13,7 +13,7 @@ ScreenshotPaths: "C:\\Users\\bredi\\Documents\\My Games\\Core\\Saved\\Maps\\Drop
 ScreenshotPaths: "C:\\Users\\bredi\\Documents\\My Games\\Core\\Saved\\Maps\\Dropper\\Screenshots\\Screenshot0003.png"
 ScreenshotPaths: "C:\\Users\\bredi\\Documents\\My Games\\Core\\Saved\\Maps\\Dropper\\Screenshots\\Screenshot0002.png"
 ScreenshotPaths: "C:\\Users\\bredi\\Documents\\My Games\\Core\\Saved\\Maps\\Dropper\\Screenshots\\Screenshot0004.png"
-ReleaseNotes: "- Added new obstacles\r\n- Added decorations\r\n- Added no winner message\r\n- Added death sound and effects\r\n- Updated level diffictulty\r\n- Updated player animations\r\n- Fixed mounts"
+ReleaseNotes: "- Added wins and deaths leaderboards\r\n- Added round start message\r\n- Increased round duration\r\n- Fixed blood effect"
 OwnerId: "cce01c033d264f688443b7f27a29ea1e"
 SerializationVersion: 1
 PublishedState: Public
